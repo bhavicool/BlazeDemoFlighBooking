@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BlazeDemoScenarios" duration-ms="16616" started-at="2021-05-22T18:34:32Z" finished-at="2021-05-22T18:34:49Z">
+    <groups>
+    </groups>
+    <test name="FlightBooking" duration-ms="16616" started-at="2021-05-22T18:34:32Z" finished-at="2021-05-22T18:34:49Z">
+      <class name="test.TestNGBlazeDemo">
+        <test-method status="PASS" signature="navigateToApplication()[pri:0, instance:test.TestNGBlazeDemo@31610302]" name="navigateToApplication" is-config="true" duration-ms="5560" started-at="2021-05-22T18:34:32Z" finished-at="2021-05-22T18:34:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToApplication -->
+        <test-method status="PASS" signature="successfulFlightBooking(java.lang.String, java.lang.String)[pri:1, instance:test.TestNGBlazeDemo@31610302]" name="successfulFlightBooking" duration-ms="4074" started-at="2021-05-22T18:34:38Z" finished-at="2021-05-22T18:34:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulFlightBooking -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:test.TestNGBlazeDemo@31610302]" name="quitDriver" is-config="true" duration-ms="777" started-at="2021-05-22T18:34:42Z" finished-at="2021-05-22T18:34:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="navigateToApplication()[pri:0, instance:test.TestNGBlazeDemo@31610302]" name="navigateToApplication" is-config="true" duration-ms="4291" started-at="2021-05-22T18:34:43Z" finished-at="2021-05-22T18:34:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToApplication -->
+        <test-method status="PASS" signature="validateFlightCities(java.lang.String, java.lang.String)[pri:2, instance:test.TestNGBlazeDemo@31610302]" name="validateFlightCities" duration-ms="942" started-at="2021-05-22T18:34:47Z" finished-at="2021-05-22T18:34:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFlightCities -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:test.TestNGBlazeDemo@31610302]" name="quitDriver" is-config="true" duration-ms="946" started-at="2021-05-22T18:34:48Z" finished-at="2021-05-22T18:34:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- test.TestNGBlazeDemo -->
+    </test> <!-- FlightBooking -->
+  </suite> <!-- BlazeDemoScenarios -->
+</testng-results>

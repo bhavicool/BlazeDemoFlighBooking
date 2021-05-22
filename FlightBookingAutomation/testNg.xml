@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BlazeDemoScenarios">
+	<parameter name="departureCity" value="Boston" />
+	<parameter name="destinationCity" value="London" />
+	<parameter name="secondDepartureCity" value="Paris" />
+	<parameter name="secondDestinationCity" value="New York" />
+	<test name="FlightBooking">
+		<classes>
+			<class name="test.TestNGBlazeDemo" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BlazeDemoScenarios]">
+  <parameter name="destinationCity" value="London"/>
+  <parameter name="secondDepartureCity" value="Paris"/>
+  <parameter name="departureCity" value="Boston"/>
+  <parameter name="secondDestinationCity" value="New York"/>
+  <test thread-count="5" name="FlightBooking(failed)">
+    <classes>
+      <class name="test.TestNGBlazeDemo">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="navigateToApplication"/>
+          <include name="validateFlightCities" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.TestNGBlazeDemo -->
+    </classes>
+  </test> <!-- FlightBooking(failed) -->
+</suite> <!-- Failed suite [BlazeDemoScenarios] -->
