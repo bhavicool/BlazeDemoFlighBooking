@@ -3,10 +3,12 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ConfirmationPage {
+public class ConfirmationPage extends Page {
+	
+	public ConfirmationPage(WebDriver driver) {
+        super(driver);
+    }
 
 	
 	public WebElement getConfirmationId(WebDriver driver)
@@ -16,13 +18,12 @@ public class ConfirmationPage {
 	}
 	
 	
-	public String confirmDetails(WebDriver driver) throws InterruptedException
+	public String confirmDetails() throws InterruptedException
 	{
 
-		WebDriverWait wait = new WebDriverWait(driver, 5); 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[normalize-space()='Thank you for your purchase today!']")));
-
-		return getConfirmationId(driver).getText();
+		waitForElement(driver.findElement(By.xpath("//h1[normalize-space()='Thank you for your purchase today!']")));
+		
+		return getElementText(getConfirmationId(driver));
 		
 	}
 }

@@ -11,7 +11,7 @@
         <methods>
           <include name="quitDriver"/>
           <include name="navigateToApplication"/>
-          <include name="validateFlightCities" invocation-numbers="0"/>
+          <include name="validateExpensiveFlightName" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.TestNGBlazeDemo -->
     </classes>

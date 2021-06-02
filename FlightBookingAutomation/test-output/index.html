@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-BlazeDemoScenarios">
-                    <span>C:\CucumberJavaWorkspace\FlightBookingAutomation\testNg.xml</span>
+                    <span>C:\BlazeDemoStuff\BlazeDemoFlighBooking\FlightBookingAutomation\testNg.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BlazeDemoScenarios" title="test.TestNGBlazeDemo" hash-for-method="successfulFlightBooking(Boston, London)">successfulFlightBooking(Boston, London)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BlazeDemoScenarios" title="test.TestNGBlazeDemo" hash-for-method="validateCheapFlightName(Paris, New York)">validateCheapFlightName(Paris, New York)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BlazeDemoScenarios" title="test.TestNGBlazeDemo" hash-for-method="validateExpensiveFlightName(Boston, London)">validateExpensiveFlightName(Boston, London)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +148,22 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="validateCheapFlightName(Paris, New York)">
+                  </a> <!-- validateCheapFlightName(Paris, New York) -->
+                  <span class="method-name">validateCheapFlightName</span>
+                  <span class="parameters">(Paris, New York)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateExpensiveFlightName(Boston, London)">
+                  </a> <!-- validateExpensiveFlightName(Boston, London) -->
+                  <span class="method-name">validateExpensiveFlightName</span>
+                  <span class="parameters">(Boston, London)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validateFlightCities(Paris, New York)">
                   </a> <!-- validateFlightCities(Paris, New York) -->
                   <span class="method-name">validateFlightCities</span>
@@ -149,7 +175,7 @@
         </div> <!-- panel BlazeDemoScenarios -->
         <div panel-name="test-xml-BlazeDemoScenarios" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\CucumberJavaWorkspace\FlightBookingAutomation\testNg.xml</span>
+            <span class="header-content">C:\BlazeDemoStuff\BlazeDemoFlighBooking\FlightBookingAutomation\testNg.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -202,20 +228,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'successfulFlightBooking')
 data.setCell(0, 2, 'test.TestNGBlazeDemo')
-data.setCell(0, 3, 4074);
+data.setCell(0, 3, 5048);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateFlightCities')
+data.setCell(1, 1, 'validateExpensiveFlightName')
 data.setCell(1, 2, 'test.TestNGBlazeDemo')
-data.setCell(1, 3, 942);
+data.setCell(1, 3, 1337);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateCheapFlightName')
+data.setCell(2, 2, 'test.TestNGBlazeDemo')
+data.setCell(2, 3, 1255);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateFlightCities')
+data.setCell(3, 2, 'test.TestNGBlazeDemo')
+data.setCell(3, 3, 1167);
 window.suiteTableData['BlazeDemoScenarios']= { tableData: data, tableDiv: 'times-div-BlazeDemoScenarios'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-BlazeDemoScenarios">
               </div> <!-- times-div-BlazeDemoScenarios -->
             </div> <!-- times-div -->
@@ -248,23 +282,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">successfulFlightBooking(Boston, London)</span>
-                <span class="method-start">5560 ms</span>
+                <span class="method-start">5076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">9635 ms</span>
+                <span class="method-start">10126 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToApplication</span>
-                <span class="method-start">10416 ms</span>
+                <span class="method-start">10838 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateFlightCities(Paris, New York)</span>
-                <span class="method-start">14707 ms</span>
+                <span class="method-start">14356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">15650 ms</span>
+                <span class="method-start">15524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToApplication</span>
+                <span class="method-start">16236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCheapFlightName(Paris, New York)</span>
+                <span class="method-start">19308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">20564 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToApplication</span>
+                <span class="method-start">21237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateExpensiveFlightName(Boston, London)</span>
+                <span class="method-start">24587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">25925 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

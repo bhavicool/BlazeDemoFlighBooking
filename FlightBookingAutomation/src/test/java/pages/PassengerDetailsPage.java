@@ -3,11 +3,13 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PassengerDetailsPage {
+public class PassengerDetailsPage extends Page {
+	
+	public PassengerDetailsPage(WebDriver driver) {
+        super(driver);
+    }
 
 	public WebElement passengerName(WebDriver driver)
 	{
@@ -78,35 +80,30 @@ public class PassengerDetailsPage {
 	public void enterPassengerDetails(WebDriver driver) throws InterruptedException
 	{
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10); 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("inputName")));
+		waitForElement(passengerName(driver));
 
-		passengerName(driver).sendKeys("Simon Stewart");
+		sendValue(passengerName(driver),"Simon Stewart");
 
-		passengerAddress(driver).sendKeys("Vanlose 2720");
+		sendValue(passengerAddress(driver),"Vanlose 2720");
 
-		passengerCity(driver).sendKeys("Glostrup");
+		sendValue(passengerCity(driver),"Glostrup");
 
-		passengerState(driver).sendKeys("Zealand");
+		sendValue(passengerState(driver),"Zealand");
 
-		passengerZipCode(driver).sendKeys("2600");
+		sendValue(passengerZipCode(driver),"2600");
 
 		Select cardType = new Select(passengerCard(driver));
 		cardType.selectByValue("amex");
 
-		passengerCreditCardNumber(driver).sendKeys("123456789");
+		sendValue(passengerCreditCardNumber(driver),123456789);
 
-		passengerCreditCardYear(driver).clear();
+		sendValue(passengerCreditCardYear(driver),2029);
 		
-		passengerCreditCardYear(driver).sendKeys("2029");
+		sendValue(passengerCreditCardMonth(driver),8);
 
-		passengerCreditCardMonth(driver).clear();
+		sendValue(passengerCreditCardName(driver),"James Gosling");
 
-		passengerCreditCardMonth(driver).sendKeys("08");
-
-		passengerCreditCardName(driver).sendKeys("James Gosling");
-
-		purchaseFlight(driver).click();
+		selectElement(purchaseFlight(driver));
 
 	}
 }
